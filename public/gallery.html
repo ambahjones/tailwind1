@@ -5,19 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
-    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="../dist/output.css">
 </head>
 <body class="text-slate-900 dark:bg-slate-900 dark:text-slate-200">
     <header class="fixed flex justify-end top-0 w-full h-20 bg-slate-700">
-        <!--flex header? logo on top right?-->
         <nav class="w-1/2 mr-4 xl:w-1/3">
-            <ul class="flex justify-between pt-6">
-                <li class="px-1">Spotlight</li>
-                <li class="px-1">Menu</li>
-                <li class="px-1"><a href="index.html">Home</a></li>
-            </ul>
+            <!--main nav elements-->
+            <div class="hidden md:flex justify-end">
+                <a class="px-1" href="">Spotlight</a>
+                <a class="px-1" href="">Menu</a>
+                <a class="px-1 " href="index.html">Home</a>
+            </div>
+
+            <!--mobile nav button-->
         </nav>
     </header>
+    <!--Mobile nav links-->
+    <div class="mobile-nav-hidden">
+        <div class="">
+            <ul>
+                <li><a class="px-1" href="">Spotlight</a></li>
+                <li><a class="px-1" href="">Menu</a></li>
+                <li><a class="px-1 " href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </div>
+
     <main class="mt-24">
         <h1 class="text-center text-7xl py-10">Gallery</h1>
         <section class="lg:flex lg:flex-wrap lg:justify-around lg:w-3/4 lg:my-0 lg:mx-auto">

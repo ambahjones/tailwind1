@@ -4,24 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>blank canvas</title>
     <link rel="stylesheet" href="../dist/output.css">
 </head>
-<body class="dark:bg-slate-900">
+<body class="text-slate-900 dark:bg-slate-900 dark:text-slate-200">
     <main class="h-screen grid grid-cols-8 grid-rows-6">
-        <h1 class="col-start-2 col-end-8 row-start-2 row-end-3 text-4xl font-bold text-center dark:text-slate-100 pt-10 sm:text-8xl sm:pt-40">
+        <h1 class="col-start-2 col-end-8 row-start-2 row-end-3 text-4xl font-bold text-center dark:text-slate-100 pt-10 sm:text-7xl sm:pt-8">
             blank canvas
         </h1>
-        <h2 class="col-start-2 col-end-8 row-start-3 row-end-4 text-2xl text-center dark:text-slate-200 sm:text-4xl">A home for art</h2>
 
-        <div class="col-start-2 col-end-8 row-start-4 row-end-6 -mt-5">
-            <form action="">
+        <h2 class="col-start-2 col-end-8 row-start-3 row-end-4 text-2xl text-center sm:text-4xl">A home for art</h2>
+
+        <div class="col-start-2 col-end-8 row-start-4 row-end-6 -mt-5 sm:col-start-3 sm:col-end-7 xl:col-start-4 xl:col-end-6">
+            <form action="" class="md:px-10 lg:px-20 xl:px-0">
                 <input type="text" placeholder="Username" name="user" class="w-full border border-slate-400 mb-5 p-1" id="">
                 <input type="text" placeholder="Password" name="password" class="w-full border border-slate-400 p-1" id="">
-                <input type="submit" value="Log in" class="w-1/2 block accent-slate-800 bg-slate-300 rounded-2xl my-5 mx-auto p-1 cursor-pointer">
+                <input type="submit" value="Log in" class="w-1/2 block text-slate-900 bg-slate-300 rounded-2xl my-5 mx-auto p-1 cursor-pointer xl:transition-colors ease-in hover:bg-cyan-200">
             </form>
-            <p class="-m-2 text-sm text-center dark:text-slate-200">Don't have an account? <a class="underline dark:hover:text-cyan-300 sm:no-underline" href="signup.html">Create one</a>!</p>
-            <a class="block w-2/3 text-center p-3 mt-10 mx-auto border border-slate-300 rounded-2xl bg-slate-300 dark:text-slate-900" href="gallery.html">Browse public gallery</a>
+            <p class="-m-2 text-sm text-center">Don't have an account? <a class="underline dark:hover:text-cyan-200 sm:no-underline" href="signup.html">Create one</a>!</p>
+            <a class="block w-52 text-center py-3 px-1 mt-10 mx-auto border border-slate-300 rounded-2xl bg-slate-300 text-slate-900 xl:transition-colors ease-in hover:bg-cyan-200" href="gallery.html">Browse public gallery</a>
+        </div>
+
+        <div class="flex justify-evenly row-start-6 row-end-7 col-start-2 col-end-8 pt-12">
+            <p class="inline-block ">©blank canvas 2022</p>
+            <p class="inline-block ">Contact</p>
+            <p class="inline-block ">Help</p>
         </div>
     </main>
 </body>

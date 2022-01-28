@@ -4,10 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Account sign up</title>
     <link rel="stylesheet" href="../dist/output.css">
 </head>
-<body>
-    
+<body class="text-slate-900 dark:bg-slate-900 dark:text-slate-200">
+    <main class="h-screen grid grid-cols-8 grid-rows-6">
+        <h1 class="col-start-2 col-end-8 row-start-1 row-end-2 text-4xl font-bold text-center dark:text-slate-100 pt-16 sm:text-7xl sm:pt-8">
+            blank canvas
+        </h1>
+
+        <h2 class="col-start-2 col-end-8 row-start-2 row-end-3 text-2xl text-center sm:text-4xl">A home for art</h2>
+
+        <div class="col-start-2 col-end-8 row-start-3 row-end-5 -mt-5 sm:col-start-3 sm:col-end-7 xl:col-start-4 xl:col-end-6">
+            <form action="" class="md:px-10 lg:px-20 xl:px-0">
+                <input type="text" placeholder="First name" name="first" class="w-full border border-slate-400 mb-5 p-1" id="first-name">
+                <input type="text" placeholder="Last name" name="last" class="w-full border border-slate-400 mb-5 p-1" id="last-name">
+                <input type="text" placeholder="Email" name="email" class="w-full border border-slate-400 mb-5 p-1" id="signup-email">
+                <input type="text" placeholder="Password" name="password" class="w-full border border-slate-400 p-1" id="signup-password">
+                <input type="submit" value="Sign up" class="w-1/2 block text-slate-900 bg-slate-300 rounded-2xl my-5 mx-auto p-1 cursor-pointer xl:transition-colors ease-in hover:bg-cyan-200" id="signup-btn">
+                <input type="checkbox" name="robot" id="robot" required>
+                <label for="robot" class="text-sm">No robot zone</label>
+            </form>
+            <p class="m-2 text-sm text-center">Already have an account? <a class="underline dark:hover:text-cyan-200 sm:no-underline" href="index.html">Log in</a>!</p>
+        </div>
+
+        <div class="flex justify-evenly row-start-6 row-end-7 col-start-2 col-end-8 pt-12 text-sm">
+            <p class="inline-block h-7 text-xs pt-1">©blank canvas 2022</p>
+            <p class="inline-block h-7">Contact</p>
+            <p class="inline-block h-7">Help</p>
+        </div>
+    </main>
 </body>
 </html>
